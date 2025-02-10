@@ -1,18 +1,8 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { UserInputComponent } from './user-input/user-input.component';
-import type { InvestmentInput, TableType } from './investment-input.model';
-import { InvestmentResultsComponent } from './investment-results/investment-results.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    HeaderComponent,
-    UserInputComponent,
-    InvestmentResultsComponent,
-  ],
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
